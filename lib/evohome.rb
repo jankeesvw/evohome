@@ -1,5 +1,7 @@
 require "evohome/version"
 
-module Evohome
-  # Your code goes here...
+class Evohome
+  def initialize
+    puts "Hello Evohome."
+  end
 end
