@@ -30,4 +30,80 @@ describe Evohome do
       end
     end
   end
+
+  describe "Thermostat" do
+    it "parses the data" do
+      example = {
+        "gatewayId" => 1379688,
+        "deviceID" => 1679149,
+        "thermostatModelType" => "EMEA_ZONE",
+        "deviceType" => 128,
+        "name" => "Badkamer",
+        "scheduleCapable" => false,
+        "holdUntilCapable" => false,
+        "thermostat" => {
+          "units" => "Celsius",
+          "indoorTemperature" => 18.12,
+          "outdoorTemperature" => 128.0,
+          "outdoorTemperatureAvailable" => false,
+          "outdoorHumidity" => 128.0,
+          "outdootHumidityAvailable" => false,
+          "indoorHumidity" => 128.0,
+          "indoorTemperatureStatus" => "Measured",
+          "indoorHumidityStatus" => "NotAvailable",
+          "outdoorTemperatureStatus" => "NotAvailable",
+          "outdoorHumidityStatus" => "NotAvailable",
+          "isCommercial" => false,
+          "allowedModes" => ["Heat", "Off"],
+          "deadband" => 0.0,
+          "minHeatSetpoint" => 5.0,
+          "maxHeatSetpoint" => 35.0,
+          "minCoolSetpoint" => 50.0,
+          "maxCoolSetpoint" => 90.0,
+          "changeableValues" => {
+            "mode" => "Off",
+            "heatSetpoint" => {
+              "value" => 18.0,
+              "status" => "Scheduled"
+            },
+            "vacationHoldDays" => 0
+          },
+          "scheduleCapable" => false,
+          "vacationHoldChangeable" => false,
+          "vacationHoldCancelable" => false,
+          "scheduleHeatSp" => 0.0,
+          "scheduleCoolSp" => 0.0 },
+        "alertSettings" => {
+          "deviceID" => 1679149,
+          "tempHigherThanActive" => true,
+          "tempHigherThan" => 30.0,
+          "tempHigherThanMinutes" => 0,
+          "tempLowerThanActive" => true,
+          "tempLowerThan" => 5.0,
+          "tempLowerThanMinutes" => 0,
+          "faultConditionExistsActive" => false,
+          "faultConditionExistsHours" => 0,
+          "normalConditionsActive" => true,
+          "communicationLostActive" => false,
+          "communicationLostHours" => 0,
+          "communicationFailureActive" => true,
+          "communicationFailureMinutes" => 15,
+          "deviceLostActive" => false,
+          "deviceLostHours" => 0
+        },
+        "isUpgrading" => false,
+        "isAlive" => true,
+        "thermostatVersion" => "01.00.07.01",
+        "macID" => "00D02D8D4977",
+        "locationID" => 1530109,
+        "domainID" => 18807,
+        "instance" => 0
+      }
+
+      thermostat = Evohome::Thermostat.new(example)
+      expect(thermostat.name).to eq "Badkamer"
+      expect(thermostat.temperature).to eq 18.12
+      expect(thermostat.temperature_setpoint).to eq 18.0
+    end
+  end
 end

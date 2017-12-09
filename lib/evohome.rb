@@ -33,9 +33,16 @@ class Evohome
                               "sessionID" => @sessionid,
                             })
 
-    response.first["devices"].map { Thermostat.new }
+    response.first["devices"].map { |d| Thermostat.new(d) }
   end
 
   class Thermostat
+    attr_accessor :name, :temperature, :temperature_setpoint
+
+    def initialize(data)
+      @name = data["name"]
+      @temperature = data["thermostat"]["indoorTemperature"]
+      @temperature_setpoint = data["thermostat"]["changeableValues"]["heatSetpoint"]["value"]
+    end
   end
 end
