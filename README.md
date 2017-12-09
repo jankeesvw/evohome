@@ -37,15 +37,15 @@ loop do
   sleep 10
 end
 
-# <thermostat name='Badkamer' temperature='19.16' temperature_setpoint='18.0' mode='Off'>
-# <thermostat name='Fien' temperature='17.0' temperature_setpoint='16.0' mode='Off'>
-# <thermostat name='Hal' temperature='20.96' temperature_setpoint='21.0' mode='Off'>
-# <thermostat name='Kantoor' temperature='10.14' temperature_setpoint='20.5' mode='Off'>
-# <thermostat name='Keuken' temperature='18.51' temperature_setpoint='22.0' mode='Off'>
-# <thermostat name='Slaapkamer' temperature='11.17' temperature_setpoint='7.5' mode='Off'>
-# <thermostat name='Soof' temperature='12.97' temperature_setpoint='10.0' mode='Off'>
-# <thermostat name='Washok' temperature='12.09' temperature_setpoint='10.0' mode='Off'>
-# <thermostat name='Woonkamer' temperature='21.06' temperature_setpoint='22.5' mode='Off'>
+# <thermostat name='Badkamer' temperature='19.16' temperature_setpoint='18.0'">
+# <thermostat name='Fien' temperature='17.0' temperature_setpoint='16.0'">
+# <thermostat name='Hal' temperature='20.96' temperature_setpoint='21.0'">
+# <thermostat name='Kantoor' temperature='10.14' temperature_setpoint='20.5'">
+# <thermostat name='Keuken' temperature='18.51' temperature_setpoint='22.0'">
+# <thermostat name='Slaapkamer' temperature='11.17' temperature_setpoint='7.5'">
+# <thermostat name='Soof' temperature='12.97' temperature_setpoint='10.0'">
+# <thermostat name='Washok' temperature='12.09' temperature_setpoint='10.0'">
+# <thermostat name='Woonkamer' temperature='21.06' temperature_setpoint='22.5'">
 ```
 
 ## Development
