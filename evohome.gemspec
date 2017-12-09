@@ -34,5 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "vcr", "~> 4.0"
   spec.add_development_dependency "webmock", "~> 3.1"
+  spec.add_development_dependency "rspec-collection_matchers", "~> 1.1"
   spec.add_dependency "httparty", "~> 0.15.6"
 end

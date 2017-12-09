@@ -1,4 +1,5 @@
 require "bundler/setup"
+require "rspec/collection_matchers"
 require "vcr"
 require "webmock"
 require "evohome"
