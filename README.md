@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+evohome = Evohome.new(username: "your@email.com", password: "mypassword", application_id: "abc-secret-id")
+evohome.connect!
+```
 
 ## Development
 

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://tccna.honeywell.com/WebAPI/api/Session
+    body:
+      encoding: UTF-8
+      string: '{"username":"email@example.com","password":"password","ApplicationId":"secret-app-id"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      - Web1
+      Date:
+      - Sat, 09 Dec 2017 12:27:09 GMT
+      Content-Length:
+      - '584'
+      Set-Cookie:
+      - NSC_UDDOB-XfcBqj-TTM-WT=ffffffff090ecc1d45525d5f4f58455e445a4a42378b;expires=Sat,
+        09-Dec-2017 12:57:11 GMT;path=/;secure;httponly
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "sessionId": "C2736E4E-605A-439D-AFB6-B45C32022D05",
+          "userInfo": {
+            "userID": 1292658,
+            "username": "mail@example.com",
+            "firstname": "John",
+            "lastname": "Doe",
+            "streetAddress": "Mainstreet",
+            "city": "Amsterdam",
+            "zipcode": "1010AA",
+            "country": "NL",
+            "telephone": "",
+            "userLanguage": "nl-NL",
+            "isActivated": true,
+            "deviceCount": 0,
+            "tenantID": 5,
+            "securityQuestion1": "NotUsed",
+            "securityQuestion2": "NotUsed",
+            "securityQuestion3": "NotUsed",
+            "latestEulaAccepted": false
+          }
+        }
+    http_version:
+  recorded_at: Sat, 09 Dec 2017 12:27:05 GMT
+recorded_with: VCR 4.0.0
