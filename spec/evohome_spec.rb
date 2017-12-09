@@ -104,6 +104,8 @@ describe Evohome do
       expect(thermostat.name).to eq "Badkamer"
       expect(thermostat.temperature).to eq 18.12
       expect(thermostat.temperature_setpoint).to eq 18.0
+      expect(thermostat.mode).to eq "Off"
+      expect(thermostat.inspect).to eq "<thermostat name='Badkamer' temperature='18.12' temperature_setpoint='18.0' mode='Off'>"
     end
   end
 end

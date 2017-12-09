@@ -37,12 +37,17 @@ class Evohome
   end
 
   class Thermostat
-    attr_accessor :name, :temperature, :temperature_setpoint
+    attr_accessor :name, :temperature, :temperature_setpoint, :mode
 
     def initialize(data)
       @name = data["name"]
       @temperature = data["thermostat"]["indoorTemperature"]
       @temperature_setpoint = data["thermostat"]["changeableValues"]["heatSetpoint"]["value"]
+      @mode = data["thermostat"]["changeableValues"]["mode"]
+    end
+
+    def inspect
+      "<thermostat name='#{name}' temperature='#{temperature}' temperature_setpoint='#{temperature_setpoint}' mode='#{mode}'>"
     end
   end
 end
