@@ -1,0 +1,713 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tccna.honeywell.com/WebAPI/api/locations?allData=True&userId=1234
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Sessionid:
+      - 6CB595A4-0BB5-4F2D-B87F-secret
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      - Web1
+      Date:
+      - Sat, 09 Dec 2017 12:58:32 GMT
+      Content-Length:
+      - '22827'
+      Set-Cookie:
+      - NSC_UDDOB-XfcBqj-TTM-WT=ffffffff090ecc1d45525d5f4f58455e445a4a42378b;expires=Sat,
+        09-Dec-2017 13:28:34 GMT;path=/;secure;httponly
+    body:
+      encoding: UTF-8
+      string: |
+        [
+          {
+            "locationID": 1530109,
+            "name": "Thuis",
+            "username": "mail@example.com",
+            "firstname": "John",
+            "lastname": "Doe",
+            "streetAddress": "Mainstreet",
+            "city": "Amsterdam",
+            "zipcode": "1010AA",
+            "country": "NL",
+            "type": "Residential",
+            "hasStation": true,
+            "devices": [
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1679149,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Badkamer",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 18.1200,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 18.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1679149,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 0
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1679180,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Fien",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 17.9900,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 16.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1679180,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 4
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 2339755,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Hal",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 21.1700,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 21.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 2339755,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 8
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1679161,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Kantoor",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 9.8000,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 5.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1679161,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 3
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1682007,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Keuken",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 18.5800,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 22.0,
+                      "status": "Temporary",
+                      "nextTime": "2017-12-09T18:00:00"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1682007,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 5
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1679150,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Slaapkamer",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 11.3600,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 7.5,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1679150,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 1
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 2113645,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Soof",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 13.8100,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 10.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 2113645,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 6
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 2114027,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Washok",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 11.6700,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 10.0,
+                      "status": "Temporary",
+                      "nextTime": "2017-12-09T21:00:00"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 2114027,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 7
+              },
+              {
+                "gatewayId": 1379688,
+                "deviceID": 1679151,
+                "thermostatModelType": "EMEA_ZONE",
+                "deviceType": 128,
+                "name": "Woonkamer",
+                "scheduleCapable": false,
+                "holdUntilCapable": false,
+                "thermostat": {
+                  "units": "Celsius",
+                  "indoorTemperature": 20.4600,
+                  "outdoorTemperature": 128.0000,
+                  "outdoorTemperatureAvailable": false,
+                  "outdoorHumidity": 128.0000,
+                  "outdootHumidityAvailable": false,
+                  "indoorHumidity": 128.0000,
+                  "indoorTemperatureStatus": "Measured",
+                  "indoorHumidityStatus": "NotAvailable",
+                  "outdoorTemperatureStatus": "NotAvailable",
+                  "outdoorHumidityStatus": "NotAvailable",
+                  "isCommercial": false,
+                  "allowedModes": [
+                    "Heat",
+                    "Off"
+                  ],
+                  "deadband": 0.0000,
+                  "minHeatSetpoint": 5.0000,
+                  "maxHeatSetpoint": 35.0000,
+                  "minCoolSetpoint": 50.0000,
+                  "maxCoolSetpoint": 90.0000,
+                  "changeableValues": {
+                    "mode": "Off",
+                    "heatSetpoint": {
+                      "value": 21.0,
+                      "status": "Scheduled"
+                    },
+                    "vacationHoldDays": 0
+                  },
+                  "scheduleCapable": false,
+                  "vacationHoldChangeable": false,
+                  "vacationHoldCancelable": false,
+                  "scheduleHeatSp": 0.0000,
+                  "scheduleCoolSp": 0.0000
+                },
+                "alertSettings": {
+                  "deviceID": 1679151,
+                  "tempHigherThanActive": true,
+                  "tempHigherThan": 30.0000,
+                  "tempHigherThanMinutes": 0,
+                  "tempLowerThanActive": true,
+                  "tempLowerThan": 5.0000,
+                  "tempLowerThanMinutes": 0,
+                  "faultConditionExistsActive": false,
+                  "faultConditionExistsHours": 0,
+                  "normalConditionsActive": true,
+                  "communicationLostActive": false,
+                  "communicationLostHours": 0,
+                  "communicationFailureActive": true,
+                  "communicationFailureMinutes": 15,
+                  "deviceLostActive": false,
+                  "deviceLostHours": 0
+                },
+                "isUpgrading": false,
+                "isAlive": true,
+                "thermostatVersion": "01.00.07.01",
+                "macID": "00D02D8D4977",
+                "locationID": 1530109,
+                "domainID": 18807,
+                "instance": 2
+              }
+            ],
+            "oneTouchButtons": [],
+            "weather": {
+              "condition": "Flurries",
+              "temperature": 1.1,
+              "units": "Celsius",
+              "humidity": 93,
+              "phrase": "Light snow"
+            },
+            "daylightSavingTimeEnabled": true,
+            "timeZone": {
+              "id": "W. Europe Standard Time",
+              "displayName": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+              "offsetMinutes": 60,
+              "currentOffsetMinutes": 60,
+              "usingDaylightSavingTime": true
+            },
+            "oneTouchActionsSuspended": false,
+            "isLocationOwner": true,
+            "locationOwnerID": 1234,
+            "locationOwnerName": "John Doe",
+            "locationOwnerUserName": "email@example.com",
+            "canSearchForContractors": true
+          }
+        ]
+    http_version: 
+  recorded_at: Sat, 09 Dec 2017 12:58:33 GMT
+recorded_with: VCR 4.0.0
