@@ -1,8 +1,6 @@
 # Evohome
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/evohome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gets all temperatures from you Evohome, it only reads the temperature and setpoint for now.
 
 ## Installation
 
@@ -23,8 +21,31 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-evohome = Evohome.new(username: "your@email.com", password: "mypassword", application_id: "abc-secret-id")
+require "evohome"
+
+email = "email@example.com"
+password = "secret"
+application_id = "application_id"
+
+evohome = Evohome.new(username: email, password: password, application_id: application_id)
 evohome.connect!
+
+loop do 
+  values = evohome.thermostats.map { |t| t.inspect }
+  system 'clear'
+  puts values
+  sleep 10
+end
+
+# <thermostat name='Badkamer' temperature='19.16' temperature_setpoint='18.0' mode='Off'>
+# <thermostat name='Fien' temperature='17.0' temperature_setpoint='16.0' mode='Off'>
+# <thermostat name='Hal' temperature='20.96' temperature_setpoint='21.0' mode='Off'>
+# <thermostat name='Kantoor' temperature='10.14' temperature_setpoint='20.5' mode='Off'>
+# <thermostat name='Keuken' temperature='18.51' temperature_setpoint='22.0' mode='Off'>
+# <thermostat name='Slaapkamer' temperature='11.17' temperature_setpoint='7.5' mode='Off'>
+# <thermostat name='Soof' temperature='12.97' temperature_setpoint='10.0' mode='Off'>
+# <thermostat name='Washok' temperature='12.09' temperature_setpoint='10.0' mode='Off'>
+# <thermostat name='Woonkamer' temperature='21.06' temperature_setpoint='22.5' mode='Off'>
 ```
 
 ## Development
